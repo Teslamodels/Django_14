@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Data2</title>
+</head>
+<body>
+    <div style="text-align: center; font-family: sans-serif; color: gray;">
+        <h4>Welcome to that too</h4>
+        <ul>
+            {% for post in object_list %}
+            <li>
+                {{ post.Title }}
+                {{ post.Text }}
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>
